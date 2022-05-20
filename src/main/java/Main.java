@@ -19,12 +19,14 @@ public class Main {
         s.add("ab");
         s.add("ab");
         s.add("abc");
+
         // queries
         q.add("ab");
         q.add("abc");
         q.add("bc");
         // result logger
         log.info(SparseArray.sparse(s, q));
+        //System.out.println(Arrays.deepEquals(new List[]{s}, new List[]{q}));
 
 
     }
