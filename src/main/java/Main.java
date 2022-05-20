@@ -24,7 +24,7 @@ public class Main {
         q.add("abc");
         q.add("bc");
         // result logger
-        log.info(Arrays.toString(SparseArray.sparse(s, q)));
+        log.info(SparseArray.sparse(s, q));
 
 
     }
