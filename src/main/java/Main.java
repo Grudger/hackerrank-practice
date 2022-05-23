@@ -1,4 +1,5 @@
 
+import flippingBits.FlippingBits;
 import lonelyInteger.LonelyInteger;
 import org.jboss.logging.Logger;
 
@@ -12,9 +13,9 @@ public class Main {
 
     public static void main(String[] args) {
         //Arrays.stream(input).forEach(a -> a%2 == 0 ? pos =+1 : odd +=1);
-        int[] x =  {1, 2, 3, 4, 3, 2, 1};
-        List<Integer> a = Arrays.stream(x).boxed().collect(Collectors.toList());
-        log.info(LonelyInteger.lonelyInteger(a));
+
+        long a = 5;
+        log.info(FlippingBits.bitFlip(a));
 
     }
 
