@@ -1,11 +1,10 @@
-import minMax.MinMax;
-import org.jboss.logging.Logger;
-import sparseArrays.SparseArray;
-import timeConversion.TimeConversion;
 
-import java.util.ArrayList;
+import lonelyInteger.LonelyInteger;
+import org.jboss.logging.Logger;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -13,21 +12,9 @@ public class Main {
 
     public static void main(String[] args) {
         //Arrays.stream(input).forEach(a -> a%2 == 0 ? pos =+1 : odd +=1);
-        List<String> s = new ArrayList<>();
-        List<String> q = new ArrayList<>();
-        // strings
-        s.add("ab");
-        s.add("ab");
-        s.add("abc");
-
-        // queries
-        q.add("ab");
-        q.add("abc");
-        q.add("bc");
-        // result logger
-        log.info(SparseArray.sparse(s, q));
-        //System.out.println(Arrays.deepEquals(new List[]{s}, new List[]{q}));
-
+        int[] x =  {1, 2, 3, 4, 3, 2, 1};
+        List<Integer> a = Arrays.stream(x).boxed().collect(Collectors.toList());
+        log.info(LonelyInteger.lonelyInteger(a));
 
     }
 
